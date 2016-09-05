@@ -10,14 +10,14 @@ int main(){
   b=5;
   s=somma(a,b);
 
-  printf("%d",s);
+  printf("%d\n",s);
 
   return 0;
 }
 
 int somma(int a,int b){
 
-  if(a==1) return 1;
+  if(b==0) return 1;
 
-  return 1+somma(a-1,b); 
+  return 1+somma(a,b-1); 
 }
